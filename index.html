@@ -53,18 +53,6 @@
     h4 { font-size: 1.02rem; letter-spacing: -.01em; }
 
     .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
-    .top-strip {
-      background: #0d1b2a;
-      border-bottom: 1px solid rgba(201,168,76,.22);
-      color: rgba(232, 201, 122, .92);
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: .72rem;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: .58rem 0;
-    }
-    .top-strip .wrap { display: flex; gap: .8rem; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-
     header {
       position: sticky;
       top: 0;
@@ -252,7 +240,7 @@
 
     @media print {
       body { background: white; color: #111; }
-      header, .top-strip, .path-btn, .family-tabs, .simulator, .glossary-tools { display: none !important; }
+      header, .path-btn, .family-tabs, .simulator, .glossary-tools { display: none !important; }
       section { padding: 1.4rem 0; }
       .card, .product-card, .term-card, .risk-card, .tool-card, .hero-card { box-shadow: none; border-color: #ccc; background: white; color: #111; }
       p, td { color: #333; }
@@ -262,13 +250,6 @@
   </style>
 </head>
 <body>
-  <div class="top-strip">
-    <div class="wrap">
-      <span>For professional clients, eligible counterparties and adviser education only.</span>
-      <span>No offer. No personal recommendation. Capital may be at risk.</span>
-    </div>
-  </div>
-
   <header>
     <div class="wrap nav">
       <a class="brand" href="#top" aria-label="Gold Grain Capital structured products explainer">
@@ -729,7 +710,7 @@
       </div>
       <div>
         <h3>Important wording</h3>
-        <p>Capital protection, where referenced, applies only according to the final terms and is subject to issuer credit risk. Values before maturity may be lower than the protected amount. Investors should conduct their own independent assessment and read the final documentation.</p>
+        <p>Capital protection, where referenced, applies only according to the final terms and is subject to issuer credit risk. Values before maturity may be lower than the protected amount. Investors should conduct their own independent assessment and read the final documentation. For professional clients, eligible counterparties and adviser education only. No offer. No personal recommendation. Capital may be at risk.</p>
       </div>
     </div>
   </footer>
